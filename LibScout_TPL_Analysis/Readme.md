@@ -62,7 +62,7 @@ python crawl_libraries.py --input Source_SDKs/ExampleSDKs.csv --output Crawling_
 
 3. The output is saved in the `Crawling_Results/CrawlingResults.csv` file, which contains details about the crawled libraries.
 
-Note that a new folder named `TP_libraries_storage`, will be created containing the SDKs code downloaded from Maven repository.
+Note that a new folder named `TP_libraries_storage`, will be created containing the SDKs code downloaded from the Maven repository.
 
 ### 2. Set Up Dependencies (`setup.py`)
 
