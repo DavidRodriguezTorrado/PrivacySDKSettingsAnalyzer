@@ -1,6 +1,8 @@
 # Privacy Settings Analysis and Maven Library Crawling Tools
 
-This repository contains two distinct projects contributing to the study of privacy settings in Android third-party libraries, particularly Facebook SDKs, as described in the accompanying PETs paper. The two primary tools in this repository are:
+This repository details the technical contributions of the paper _Privacy Settings in Third-Party Libraries in Android Applications: A Study on Facebook SDKs_, accepted for publication at the Privacy Enhancing Technologies Symposium (PETs) 2025. It contains two distinct projects that contribute to the study of privacy settings in Android third-party libraries, particularly Facebook SDKs.
+
+The two primary tools in this repository are:
 
 1. **Frida-based Privacy Analysis Tool**: A tool designed to dynamically analyze privacy-related settings of Facebook SDKs integrated into Android applications.
 2. **Maven Library Crawler and LibScout Profile Generator**: A suite of tools to crawl and download libraries from Maven repositories, generate XML metadata, and create LibScout profiles for these libraries.

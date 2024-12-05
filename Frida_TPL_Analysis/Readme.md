@@ -1,6 +1,6 @@
 # Privacy Settings Analysis Script for Facebook SDKs
 
-This repository contains a Frida script designed to analyze the privacy-related settings and detect the presence of Facebook SDKs within Android applications. The script hooks into various methods provided by Facebook SDKs to retrieve and log information about data collection, privacy preferences, and SDK initialization status.
+This repository contains a Frida script designed to analyze the privacy-related settings and detect the presence of Facebook SDKs within Android applications. The script hooks into various methods provided by Facebook SDKs to retrieve and log information about data collection, privacy settings, and SDK initialization status.
 
 ## Features
 
@@ -56,3 +56,4 @@ Replace ```<target_app_package_name>``` with the package name of the target app 
 ---
 ## Notes
 The script relies on the class names and method signatures of the Facebook SDK. If the SDK version changes, these might need to be updated.
+For additional details on the functionality of the script, please refer to the associated published paper.
