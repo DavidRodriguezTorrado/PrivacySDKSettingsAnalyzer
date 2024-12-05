@@ -100,11 +100,12 @@ Please, make sure that both tests are passed before proceeding.
 The xml_files_generator.py script generates XML metadata files for the libraries, which are used in creating LibScout profiles.
 
 Steps:
+
 Run the script:
 
-    ```
-    python xml_files_generator.py
-    ```
+```
+python xml_files_generator.py
+```
 
 Output XML files are saved in the ./assets/ directory.
 
@@ -112,6 +113,7 @@ Output XML files are saved in the ./assets/ directory.
 The profile_generator.py script generates LibScout profiles based on the XML files created in the previous step.
 
 Steps:
+
 Run the script:
 
 ```python profile_generator.py```
