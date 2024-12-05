@@ -114,9 +114,7 @@ The profile_generator.py script generates LibScout profiles based on the XML fil
 Steps:
 Run the script:
 
-    ```
-    python profile_generator.py    
-    ```
+```python profile_generator.py```
 
 The generated profiles are stored in the LibScout directory under build/profiles.
 
