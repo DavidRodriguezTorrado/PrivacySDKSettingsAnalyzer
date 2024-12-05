@@ -110,7 +110,7 @@ python xml_files_generator.py
 
 Output XML files are saved in the ./assets/ directory.
 
-### 5. Generate LibScout Profiles (profile_generator.py)
+### 5. Generate LibScout Profiles (`profile_generator.py`)
 The profile_generator.py script generates LibScout profiles based on the XML files created in the previous step.
 
 Steps:
