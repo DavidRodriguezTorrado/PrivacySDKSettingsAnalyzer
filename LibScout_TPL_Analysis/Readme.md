@@ -11,7 +11,7 @@ This project provides a complete workflow for crawling and downloading libraries
 
 2. **Install Python Dependencies**:
    - Install the required Python libraries by running the following command:
-     ```bash
+     ```
      pip install -r requirements.txt
      ```
    - This will ensure all necessary libraries, including `pandas`, are installed.
@@ -25,11 +25,11 @@ This project provides a complete workflow for crawling and downloading libraries
      ```
    - It is recommended to use a similar or compatible version. You can download Java from [Oracle](https://www.oracle.com/java/technologies/javase-downloads.html) or install via your system's package manager:
      - For Ubuntu:
-       ```bash
+       ```
        sudo apt install default-jre
        ```
      - For macOS (via Homebrew):
-       ```bash
+       ```
        brew install openjdk
        ```
 
@@ -56,7 +56,7 @@ The script requires three arguments:
 #### Steps:
 1. Run the script:
 
-    ```bash
+    ```
     python crawl_libraries.py --input Source_SDKs/ExampleSDKs.csv --output Crawling_Results/CrawlingResults.csv
     ```
 
@@ -71,7 +71,7 @@ The setup.py script ensures all dependencies, including the required LibScout re
 Steps:
 1. Run the setup script:
 
-    ```bash
+    ```
     python setup.py
     ```
    
@@ -90,7 +90,7 @@ The run_checks.py script validates the LibScout project has the necessary files 
 Steps:
 Run the script:
 
-    ```bash
+    ```
     python run_checks.py    
     ```
 
@@ -102,7 +102,7 @@ The xml_files_generator.py script generates XML metadata files for the libraries
 Steps:
 Run the script:
 
-    ```bash
+    ```
     python xml_files_generator.py
     ```
 
@@ -114,7 +114,7 @@ The profile_generator.py script generates LibScout profiles based on the XML fil
 Steps:
 Run the script:
 
-    ```bash
+    ```
     python profile_generator.py    
     ```
 
