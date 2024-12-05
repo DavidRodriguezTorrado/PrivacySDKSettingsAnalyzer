@@ -56,9 +56,9 @@ The script requires three arguments:
 #### Steps:
 1. Run the script:
 
-    ```
-    python crawl_libraries.py --input Source_SDKs/ExampleSDKs.csv --output Crawling_Results/CrawlingResults.csv
-    ```
+```
+python crawl_libraries.py --input Source_SDKs/ExampleSDKs.csv --output Crawling_Results/CrawlingResults.csv
+```
 
 3. The output is saved in the `Crawling_Results/CrawlingResults.csv` file, which contains details about the crawled libraries.
 
@@ -71,9 +71,9 @@ The setup.py script ensures all dependencies, including the required LibScout re
 Steps:
 1. Run the setup script:
 
-    ```
-    python setup.py
-    ```
+```
+python setup.py
+```
    
 2. The script performs the following:
 - Clones the LibScout repository.
@@ -88,11 +88,12 @@ Run the gradlew or gradlew.bat files to ensure that the LibScout project is set 
 The run_checks.py script validates the LibScout project has the necessary files to proceed.  
 
 Steps:
+
 Run the script:
 
-    ```
-    python run_checks.py    
-    ```
+```
+python run_checks.py    
+```
 
 Please, make sure that both tests are passed before proceeding.
 
@@ -116,7 +117,9 @@ Steps:
 
 Run the script:
 
-```python profile_generator.py```
+```
+python profile_generator.py
+```
 
 The generated profiles are stored in the LibScout directory under build/profiles.
 
