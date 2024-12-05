@@ -1,0 +1,30 @@
+Library,Library_category,SDK_name
+Firebase,Development,com.google.firebase:firebase-admin
+Kotlin,Development,org.jetbrains.kotlin.android:org.jetbrains.kotlin.android.gradle.plugin
+Google Cloud Messaging (GCM),Development,com.google.firebase:firebase-messaging
+Google gson,Development,com.google.code.gson:gson
+Glide,Development,com.github.bumptech.glide:glide
+AdMob,Ad Networks,com.appodeal.ads.sdk.networks:admob
+Chromium,Development,org.chromium.net
+Lottie,Development,com.airbnb.android:lottie
+Okio,Development,com.squareup.okio:okio
+Facebook Audience Network,Ad Networks,com.facebook.android:audience-network-sdk
+Facebook,Social,com.facebook.android:facebook-android-sdk
+Open Measurement,Ad Networks,com.iab:lib
+IntelliJ IDEA,Development,
+Google ZXing,Development,com.google.zxing:core
+Google Protocol Buffers,Development,com.google.protobuf:protobuf-java
+Google Maps SDK,Development,com.google.maps:google-maps-services
+Picasso,Development,com.squareup.picasso:picasso
+Unity Ads,Ad Networks,com.unity3d.ads:unity-ads
+Google Guava,Development,com.google.guava:guava
+AppLovin,Ad Networks,com.applovin:applovin-sdk
+ReactiveX,Development,io.reactivex.rxjava3:rxandroid
+Dagger,Development,com.google.dagger:dagger
+Unity 3D,Development,com.unity3d
+FMOD Ex Programmers API,Development,
+Google Analytics,Development,com.google.apis:google-api-services-analytics
+Ironsource,Ad Networks,com.ironsource.sdk:mediationsdk
+Vungle,Ad Networks,com.vungle:publisher-sdk-android
+Volley,Development,com.android.volley:volley
+Grpc,Development,o.grpc:grpc-core
