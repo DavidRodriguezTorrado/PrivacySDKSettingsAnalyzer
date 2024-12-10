@@ -36,4 +36,4 @@ The tools do not require specialized hardware. Any modern PC with 16GB RAM and 1
 ## Environment 
 
 ### Accessibility
-The artifact is hosted in a public Git repository: https://github.com/DavidRodriguezTorrado/PrivacySDKSettingsAnalyzer. The specific commit ID to be evaluated for this submission is 4efcbc5.
+The artifact is hosted in a public Git repository: https://github.com/DavidRodriguezTorrado/PrivacySDKSettingsAnalyzer. The specific commit ID to be evaluated for this submission is "4efcbc5".
