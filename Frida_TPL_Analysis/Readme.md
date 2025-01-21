@@ -19,10 +19,19 @@ This repository contains a Frida script designed to analyze the privacy-related 
 ## Requirements
 
 1. **Frida**: Ensure that Frida is installed on your system.
-   - **Recommended Version**: The script is tested with **Frida 14.2.18**. Using this version is strongly encouraged for compatibility.
    - Installation guide: [Frida Documentation](https://frida.re/docs/installation/)
 2. **Rooted Device or Emulator**: Required to inject the script into the target application.
 3. **ADB (Android Debug Bridge)**: Ensure ADB is installed and configured.
+
+---
+
+## Versions
+
+This script has been tested with the following versions:
+1. **Frida**: 14.2.18
+2. **Android**: 11 (API 30)
+3. **Facebook Core SDK**: [4.5.0 - 17.0.0]
+4. **Audience Network SDK**: [4.22.0 - 6.17.0]
 
 ---
 

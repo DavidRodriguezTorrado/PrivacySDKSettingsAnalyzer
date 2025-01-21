@@ -4,7 +4,101 @@ This project provides a complete workflow for crawling and downloading libraries
 
 ---
 
-## Prerequisites
+## Recommended Workflow: Using Docker
+
+The easiest and most reliable way to use this repository is via the provided Docker container. This approach ensures all dependencies are pre-installed and configured correctly.
+
+### Docker Image
+
+The Docker image for this project is publicly available at:
+
+**Image Name**: `davidrodrigueztorrado/libscout-env`
+
+### Container Setup:
+
+1. Pull the Docker image:
+   ```bash
+   docker pull davidrodrigueztorrado/libscout-env:3.0
+   ```
+   (_Only non ARM64 architectures_) Please note that the image's architecture is ARM64. If you want to run it on different architecture, please run the following command:
+    ```bash
+    docker run --rm --privileged tonistiigi/binfmt --install all
+    ```
+2. Run the Docker container:
+   ```bash
+   docker run -it --workdir /LibScout_TPL_Analysis davidrodrigueztorrado/libscout-env:3.0
+   ```
+3. Run the Python virtual environment:
+   ```bash
+   source venv/bin/activate
+   ```
+
+---
+
+### 1. Crawl Libraries (`crawl_libraries.py`)
+
+The script `crawl_libraries.py` crawls the Maven repository to download libraries based on the `ExampleSDKs.csv` file.
+
+#### Input:
+- The `ExampleSDKs.csv` file provides the list of SDKs and their metadata.
+
+#### Usage:
+The script requires three arguments:
+1. **`--input`**: Path to the input CSV file containing SDK names.
+2. **`--output`**: Path to the output CSV file for results.
+3. **`--base-url`**: (Optional) Base URL for the Maven repository. Defaults to `https://repo1.maven.org/maven2/`.
+
+#### Steps:
+1. Run the script:
+
+```
+python crawl_libraries.py --input Source_SDKs/ExampleSDKs.csv --output Crawling_Results/CrawlingResults.csv
+```
+
+3. The output is saved in the `Crawling_Results/CrawlingResults.csv` file, which contains details about the crawled libraries.
+
+Note that a new folder named `TP_libraries_storage`, will be created containing the SDKs code downloaded from the Maven repository.
+
+---
+
+### 2. Generate XML Files (`xml_files_generator.py`)
+The xml_files_generator.py script generates XML metadata files for the libraries, which are used in creating LibScout profiles.
+
+Steps:
+
+Navigate to the LibScout folder:
+```bash
+  cd LibScout
+```
+
+Run the script:
+
+```
+python xml_files_generator.py
+```
+
+Output XML files are saved in the ./assets/ directory.
+
+---
+
+### 3. Generate LibScout Profiles (`profile_generator.py`)
+The profile_generator.py script generates LibScout profiles based on the XML files created in the previous step.
+
+Steps:
+
+Run the script:
+
+```
+python profile_generator.py
+```
+
+The generated profiles are stored in the LibScout directory under `LibScout/profiles/Utilities`.
+
+## Alternative Workflow: Local Deployment
+
+If Docker is not an option, you can deploy the project locally. However, you must ensure that the correct software versions are installed, particularly for Java, as this is a strict requirement from LibScout gradle versions.
+
+### Prerequisites
 
 1. **Python 3.8+**:
    - Ensure Python 3.8 or higher is installed on your system. You can download it from [python.org](https://www.python.org/).
@@ -37,8 +131,6 @@ This project provides a complete workflow for crawling and downloading libraries
    - Ensure your machine has internet access to crawl libraries from Maven repositories.
 
 ---
-
-## Workflow
 
 ### 1. Crawl Libraries (`crawl_libraries.py`)
 
@@ -121,7 +213,7 @@ Run the script:
 python profile_generator.py
 ```
 
-The generated profiles are stored in the LibScout directory under build/profiles.
+The generated profiles are stored in the LibScout directory under LibScout/profiles/Utilities.
 
 ---
 

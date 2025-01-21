@@ -59,19 +59,19 @@ Once the paper is published, the official link and DOI will be added to this rep
 
 ## License
 
-This repository is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**. This license applies to all files and content in this repository.
+This repository is licensed under the **PolyForm Noncommercial License 1.0.0**. This license applies to all files and content in this repository.
 
 ### Permissions:
 - **Use**: You are free to use this work for non-commercial purposes.
 - **Share**: You may copy and redistribute the material in any medium or format.
-- **Adapt**: You may remix, transform, or build upon the material.
+- **Adapt**: You may remix, transform, or build upon the material for non-commercial purposes.
 
 ### Conditions:
 - **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 - **NonCommercial**: You may not use the material for commercial purposes.
 
 ### License Details:
-For more information, visit the [Creative Commons License Website](https://creativecommons.org/licenses/by-nc/4.0/).
+For more information, visit the [PolyForm Noncommercial License Website](https://polyformproject.org/licenses/noncommercial/1.0.0/).
 
 ---
 

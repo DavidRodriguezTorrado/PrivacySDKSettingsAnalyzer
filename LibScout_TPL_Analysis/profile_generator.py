@@ -59,8 +59,8 @@ if __name__ == "__main__":
     count = 0
     df = pd.read_csv(SDKs_To_Process).dropna(subset='sdk_names_found')
 
-    jar_path = "LibScout/build/libs/LibScout.jar"
-    android_sdk_path = "LibScout/androidplatforms/android-30/android.jar"
+    jar_path = "build/libs/LibScout.jar"
+    android_sdk_path = "androidplatforms/android-30/android.jar"
     i = 0
     for libName, sdk_files in zip(df['Library'], df['sdk_files_stored']):
         print('Analyzing library {} out of {}'.format(i, len(df)))

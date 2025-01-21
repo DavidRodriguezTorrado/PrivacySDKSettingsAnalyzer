@@ -4,7 +4,7 @@ import shutil
 
 # Define constants
 LIBSCOUT_REPO_URL = "https://github.com/reddr/LibScout.git"
-LIBSCOUT_DIR = "LibScout_TPL_Analysis/LibScout"
+LIBSCOUT_DIR = "LibScout"  # "LibScout_TPL_Analysis/LibScout"
 
 
 def clone_libscout():
@@ -23,7 +23,7 @@ def move_python_files():
     """
     Move the additional Python files into the LibScout directory.
     """
-    files_to_move = ["LibScout_TPL_Analysis/profile_generator.py", "LibScout_TPL_Analysis/xml_files_generator.py"]
+    files_to_move = ["profile_generator.py", "xml_files_generator.py"]
     for file in files_to_move:
         src_path = os.path.abspath(file)
         dest_path = os.path.join(LIBSCOUT_DIR, os.path.basename(file))
