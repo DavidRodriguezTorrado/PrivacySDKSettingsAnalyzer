@@ -33,8 +33,6 @@ The Docker image for this project is publicly available at:
    source venv/bin/activate
    ```
 
----
-
 ### 1. Crawl Libraries (`crawl_libraries.py`)
 
 The script `crawl_libraries.py` crawls the Maven repository to download libraries based on the `ExampleSDKs.csv` file.
@@ -59,8 +57,6 @@ python crawl_libraries.py --input Source_SDKs/ExampleSDKs.csv --output Crawling_
 
 Note that a new folder named `TP_libraries_storage`, will be created containing the SDKs code downloaded from the Maven repository.
 
----
-
 ### 2. Generate XML Files (`xml_files_generator.py`)
 The xml_files_generator.py script generates XML metadata files for the libraries, which are used in creating LibScout profiles.
 
@@ -79,8 +75,6 @@ python xml_files_generator.py
 
 Output XML files are saved in the ./assets/ directory.
 
----
-
 ### 3. Generate LibScout Profiles (`profile_generator.py`)
 The profile_generator.py script generates LibScout profiles based on the XML files created in the previous step.
 
@@ -93,6 +87,8 @@ python profile_generator.py
 ```
 
 The generated profiles are stored in the LibScout directory under `LibScout/profiles/Utilities`.
+
+---
 
 ## Alternative Workflow: Local Deployment
 
